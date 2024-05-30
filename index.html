@@ -2,77 +2,430 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 
 </head>
 
 <body>
-  <section id="navbar" class="fixed w-full">
-    <nav class="bg-white border-gray-200 dark:bg-gray-200">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#31ba88]">Shopico</span>
-        </a>
-        <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-200 md:dark:bg-gray-200 dark:border-gray-200">
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Catalog</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Faqs</a>
-            </li>
+    <!-- navbar -->
+    <section id="navbar" class="fixed w-full">
+        <nav class="bg-white border-gray-200 dark:bg-gray-200">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#31ba88]">Shopico</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-200 md:dark:bg-gray-200 dark:border-gray-200">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Catalog</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Faqs</a>
+                        </li>
 
-          </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- end navbar -->
+
+    <!-- banner -->
+    <section id="carousel">
+
+
+        <div id="default-carousel" class=" relative w-ful py-10 pt-16" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56  overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="1.png" class="absolute  block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
-      </div>
-    </nav>
-  </section>
 
-  <section id="hero  " class="w-full">
-    <div class="mx-auto pt-20 justify-center bg-slate-300 gap-4 w-full h-fit">
-      <div class="items-center flex md:grid grid-cols-2 h-full ">
-        <div class="text">
-          <h1 class="text-2xl"> welcome</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque voluptatem voluptates sed velit
-            obcaecati illum delectus adipisci ab suscipit nobis est eius dicta, magnam deserunt, placeat earum nostrum?
-            Voluptates?</p>
+
+    </section>
+    <!-- end banner -->
+
+
+
+    <!-- card -->
+    <section>
+        <div class="container mx-auto w-full h-fit bg-slate-200 py-20 px-20 rounded-md ">
+            <div class="grid grid-cols-2 px-3  ">
+                <div class="text-title pr-3">
+                    <h1 class="text-3xl">Welcome </h1>
+                    <h1 class="text-2xl py-2">What would you like to buy ?</h1>
+                    <h1 class="text-1xl mb-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        expedita
+                        tenetur corporis quidem quasi quisquam quis adipisci autem. Tenetur sint explicabo cupiditate
+                        eaque excepturi, est soluta! Ratione assumenda necessitatibus quasi.</h1>
+                    <a href="#"
+                        class="py-3 px-6 text-xs bg-green-500 rounded-xl hover:bg-green-600 hover:text-white duration-300 m-6">
+                        Buy now ?</a>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div>
+                        <img class="h-fit w-auto rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-fit w-auto rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-fit w-auto rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-fit w-auto rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
 
-        <div class="img">
-          <img
-            src="data:image/jpeg;base64,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"
-            alt="">
+    </section>
+    <!-- end card -->
+
+
+    <!-- info -->
+    <section>
+        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
+
+
+            <div class="max-w-sm bg-white  border  border-gray-200 rounded-lg shadow">
+                <a href="#">
+                    <img class="rounded-t-lg items-center "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8o6ecl8rKzRaSi5JZU1nMuqv_OrHH2HGzQ&usqp=CAU "
+                        alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">New <br> colections
+                            <hr>
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                        See More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="max-w-sm bg-white  border border-gray-200 rounded-lg shadow">
+                <a href="#">
+                    <img class="rounded-t-lg items-center "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8o6ecl8rKzRaSi5JZU1nMuqv_OrHH2HGzQ&usqp=CAU "
+                        alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">popular <br> colections
+                            <hr>
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                        See More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="max-w-sm bg-white  border border-gray-200 rounded-lg shadow ">
+                <a href="#">
+                    <img class="rounded-t-lg items-center "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8o6ecl8rKzRaSi5JZU1nMuqv_OrHH2HGzQ&usqp=CAU "
+                        alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Velentine <br> colections
+                            <hr>
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                        See More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="max-w-sm bg-white  border border-gray-200 rounded-lg shadow ">
+                <a href="#">
+                    <img class="rounded-t-lg items-center "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8o6ecl8rKzRaSi5JZU1nMuqv_OrHH2HGzQ&usqp=CAU "
+                        alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Winter <br> colections
+                            <hr>
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                        See More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end info -->
+
+    <!-- oter -->
+    <section>
+        <div class="items-center flex justify-between mx-10 ">
+            <p class="text-3xl">Other</p>
+
+            <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300  focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                See More
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
         </div>
 
-      </div>
-    </div>
-  </section>
+
+       
+        <div class="container mx-auto  grid grid-cols-4  gap-4 py-8">
+            <div class="max-w-sm bg-white  border border-gray-200 rounded-lg shadow ">
+                <a href="#">
+                    <img class="rounded-t-lg items-center "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8o6ecl8rKzRaSi5JZU1nMuqv_OrHH2HGzQ&usqp=CAU "
+                        alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Discount <br> Until 50%
+                            <hr>
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                        See More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm bg-white  border border-gray-200 rounded-lg shadow ">
+                <a href="#">
+                    <img class="rounded-t-lg items-center "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8o6ecl8rKzRaSi5JZU1nMuqv_OrHH2HGzQ&usqp=CAU "
+                        alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Popular <br> 
+                            <hr>
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                        See More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm bg-white  border border-gray-200 rounded-lg shadow ">
+                <a href="#">
+                    <img class="rounded-t-lg items-center "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8o6ecl8rKzRaSi5JZU1nMuqv_OrHH2HGzQ&usqp=CAU "
+                        alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">New <br> 
+                            <hr>
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                        See More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-sm bg-white  border border-gray-200 rounded-lg shadow ">
+                <a href="#">
+                    <img class="rounded-t-lg items-center "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8o6ecl8rKzRaSi5JZU1nMuqv_OrHH2HGzQ&usqp=CAU "
+                        alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">ALL <br> colections
+                            <hr>
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-green-500 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-blue-800">
+                        See More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- end oter -->
+
+
+    <!-- ?? -->
 </body>
 
 </html>
